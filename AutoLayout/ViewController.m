@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "AtuoFillScreenUtils.h"
+#import "DemoViewController.h"
 @interface ViewController ()
 
 @end
@@ -43,6 +44,13 @@
     [registerBtn.titleLabel setFont:[UIFont systemFontOfSize:14]];
     [registerBtn setBackgroundColor:[UIColor cyanColor]];
     [self.view addSubview:registerBtn];
+    
+    UIButton *pushBtn = [[UIButton alloc]initWithFrame:CGRectMake(276, 536, 44, 44)];
+    pushBtn.backgroundColor = [UIColor cyanColor];
+    [pushBtn setTitle:@"Push" forState:UIControlStateNormal];
+    [pushBtn.titleLabel setFont:[UIFont systemFontOfSize:14]];
+    [pushBtn addTarget:self action:@selector(pushDemoViewController) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:pushBtn];
 //    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake((self.view.frame.size.width-44)/2, (self.view.frame.size.height-44)/2, 44, 44)];
 //    [btn setTitle:@"login" forState:UIControlStateNormal];
 //        [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
@@ -50,11 +58,14 @@
 //        [btn setBackgroundColor:[UIColor cyanColor]];
 //        [self.view addSubview:btn];
 //    NSLog(@"x:%f,y:%f,width:%f,height:%f",btn.frame.origin.x,btn.frame.origin.y,btn.frame.size.width,btn.frame.size.height);
+    
+}
 
-    
-
-    
-    
+- (void)pushDemoViewController {
+    DemoViewController * demoVC = [DemoViewController new];
+    [self presentViewController:demoVC animated:YES completion:^{
+        
+    }];
 }
 
 

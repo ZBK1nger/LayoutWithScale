@@ -16,6 +16,7 @@
 		9E5246231D23B54200FEF685 /* AutoLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5246221D23B54200FEF685 /* AutoLayoutTests.m */; };
 		9E52462E1D23B54200FEF685 /* AutoLayoutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E52462D1D23B54200FEF685 /* AutoLayoutUITests.m */; };
 		9E52463D1D23B82800FEF685 /* AtuoFillScreenUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E52463C1D23B82800FEF685 /* AtuoFillScreenUtils.m */; };
+		9E5F5FC21D2A3E7200B6DCBF /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E5F5FC11D2A3E7200B6DCBF /* DemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		9E52462F1D23B54200FEF685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E52463B1D23B82800FEF685 /* AtuoFillScreenUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtuoFillScreenUtils.h; sourceTree = "<group>"; };
 		9E52463C1D23B82800FEF685 /* AtuoFillScreenUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtuoFillScreenUtils.m; sourceTree = "<group>"; };
+		9E5F5FC01D2A3E7200B6DCBF /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		9E5F5FC11D2A3E7200B6DCBF /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				9E52463C1D23B82800FEF685 /* AtuoFillScreenUtils.m */,
 				9E52460E1D23B54200FEF685 /* ViewController.h */,
 				9E52460F1D23B54200FEF685 /* ViewController.m */,
+				9E5F5FC01D2A3E7200B6DCBF /* DemoViewController.h */,
+				9E5F5FC11D2A3E7200B6DCBF /* DemoViewController.m */,
 				9E5246111D23B54200FEF685 /* Main.storyboard */,
 				9E5246141D23B54200FEF685 /* Assets.xcassets */,
 				9E5246161D23B54200FEF685 /* LaunchScreen.storyboard */,
@@ -281,6 +286,7 @@
 				9E5246101D23B54200FEF685 /* ViewController.m in Sources */,
 				9E52463D1D23B82800FEF685 /* AtuoFillScreenUtils.m in Sources */,
 				9E52460D1D23B54200FEF685 /* AppDelegate.m in Sources */,
+				9E5F5FC21D2A3E7200B6DCBF /* DemoViewController.m in Sources */,
 				9E52460A1D23B54200FEF685 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				INFOPLIST_FILE = AutoLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZBK1nger.AutoLayout;
@@ -433,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				INFOPLIST_FILE = AutoLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZBK1nger.AutoLayout;
@@ -505,6 +513,7 @@
 				9E5246341D23B54200FEF685 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E5246351D23B54200FEF685 /* Build configuration list for PBXNativeTarget "AutoLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +522,7 @@
 				9E5246371D23B54200FEF685 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E5246381D23B54200FEF685 /* Build configuration list for PBXNativeTarget "AutoLayoutUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +531,7 @@
 				9E52463A1D23B54200FEF685 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

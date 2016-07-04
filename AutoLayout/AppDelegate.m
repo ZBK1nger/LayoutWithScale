@@ -19,7 +19,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+        // Override point for customization after application launch.
     //以iphone5，5s，5c为基本机型，其他型号机器按比例系数做乘法.
     AppDelegate  *appdelegate = [UIApplication sharedApplication].delegate;
     appdelegate.autoSizeScaleX = MainScreenWidth/320.f;
