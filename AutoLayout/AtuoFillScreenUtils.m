@@ -18,7 +18,7 @@
     for(UIView *firstLevelView in view.subviews) {
         firstLevelView.frame = [AtuoFillScreenUtils updateViewsFrame:firstLevelView.frame.origin.x withY:firstLevelView.frame.origin.y AndWidth:firstLevelView.frame.size.width AndHeight:firstLevelView.frame.size.height];
         for (UIView *secondLevelView in firstLevelView.subviews) {
-            secondLevelView.frame = [AtuoFillScreenUtils updateViewsFrame:secondLevelView.frame.origin.x withY:firstLevelView.frame.origin.y AndWidth:firstLevelView.frame.size.width AndHeight:secondLevelView.frame.size.height];
+            secondLevelView.frame = [AtuoFillScreenUtils updateViewsFrame:secondLevelView.frame.origin.x withY:secondLevelView.frame.origin.y AndWidth:secondLevelView.frame.size.width AndHeight:secondLevelView.frame.size.height];
         }
     }
 }

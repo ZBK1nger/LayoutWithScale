@@ -18,7 +18,7 @@
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor lightGrayColor]];
     [self setUpViews];
-    //[AtuoFillScreenUtils autoLayoutFillScreen:self.view];
+    [AtuoFillScreenUtils autoLayoutFillScreen:self.view];
 
     
     // Do any additional setup after loading the view.
